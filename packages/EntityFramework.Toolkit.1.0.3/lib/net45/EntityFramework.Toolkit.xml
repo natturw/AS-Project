@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFramework.Toolkit</name>
+    </assembly>
+    <members>
+        <member name="M:EntityFramework.Toolkit.Concurrency.IConcurrencyResolveStrategy.ResolveConcurrencyException(System.Object,System.Object)">
+            <summary>
+            Resolves a concurrency conflict catched in <see cref="T:System.Data.Entity.Infrastructure.DbUpdateConcurrencyException"/>.
+            If <code>null</code> is returned, the default strategy <see cref="T:EntityFramework.Toolkit.Concurrency.RethrowConcurrencyResolveStrategy"/> is applied.
+            </summary>
+            <param name="conflictingEntity">The object which caused the save conflict.</param>
+            <param name="databaseEntity">The object which is already present in the database.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EntityFramework.Toolkit.Concurrency.RethrowConcurrencyResolveStrategy">
+            <summary>
+            Rethrow strategy throws an <see cref="T:EntityFramework.Toolkit.Exceptions.UpdateConcurrencyException"/> in case of a conflicting update.
+            </summary>
+        </member>
+        <member name="T:EntityFramework.Toolkit.DataSeedBase`1">
+            <summary>
+            Provides a template for generic seed implementors.
+            </summary>
+            <typeparam name="TEntity">The entity type for which the implementor provides a seed.</typeparam>
+        </member>
+        <member name="M:EntityFramework.Toolkit.DataSeedBase`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntityFramework.Toolkit.DataSeedBase`1"/> class.
+            </summary>
+        </member>
+        <member name="T:EntityFramework.Toolkit.DataSeedBase`1.ExpressionReplacer">
+            <summary>
+            Source: http://stackoverflow.com/questions/26253321/convert-expressionfunct-tproperty-to-expressionfuncobject-object-and-v
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.DbContextBase`1.#ctor">
+            <summary>
+            Empty constructor is used for 'update-database' command-line command.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.DbContextBase`1.GetChangeSet">
+            <summary>
+            Determins the changes that are transfered to the persistence layer.
+            </summary>
+            <returns>ChangeSet.</returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.AddOrUpdate``1(System.Data.Entity.DbContext,``0)">
+            <summary>
+                Adds an entity (if newly created) or update (if has non-default Id).
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The db context.</param>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+            <remarks>
+                Will not work for HasDatabaseGeneratedOption(DatabaseGeneratedOption.None).
+                Will not work for composite keys.
+            </remarks>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.IsTransient``1(System.Data.Entity.DbContext,``0)">
+            <summary>
+                Determines whether the specified entity is newly created (Id not specified).
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The context.</param>
+            <param name="entity">The entity.</param>
+            <returns>
+                <c>true</c> if the specified entity is transient; otherwise, <c>false</c>.
+            </returns>
+            <remarks>
+                Will not work for HasDatabaseGeneratedOption(DatabaseGeneratedOption.None).
+                Will not work for composite keys.
+            </remarks>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.Load``1(System.Data.Entity.DbContext,System.Object)">
+            <summary>
+                Loads a stub entity (or actual entity if already loaded).
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The context.</param>
+            <param name="id">The id.</param>
+            <returns></returns>
+            <remarks>
+                Will not work for composite keys.
+            </remarks>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.IsLoaded``1(System.Data.Entity.DbContext,System.Object)">
+            <summary>
+                Determines whether the specified entity is loaded from the database.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The context.</param>
+            <param name="id">The id.</param>
+            <returns>
+                <c>true</c> if the specified entity is loaded; otherwise, <c>false</c>.
+            </returns>
+            <remarks>
+                Will not work for composite keys.
+            </remarks>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.MarkReferencesUnchanged``1(System.Data.Entity.DbContext,``0)">
+            <summary>
+                Marks the reference navigation properties unchanged.
+                Use when adding a new entity whose references are known to be unchanged.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The context.</param>
+            <param name="entity">The entity.</param>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.Merge``1(System.Data.Entity.DbContext,``0)">
+            <summary>
+                Merges a DTO into a new or existing entity attached/added to context
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">The context.</param>
+            <param name="dataTransferObject">
+                The data transfer object. It must have a primary key property of the same name and
+                type as the actual entity.
+            </param>
+            <returns></returns>
+            <remarks>
+                Will not work for composite keys.
+            </remarks>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.GetPrimaryKeyFor``1(System.Data.Entity.DbContext)">
+            <summary>
+            Returns the primary key <see cref="T:System.Reflection.PropertyInfo"/> for a given type <typeparamref name="TEntity"/>.
+            </summary>
+            <typeparam name="TEntity">The entity type.</typeparam>
+            <param name="context">The context in which the given entity type lives.</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EntityFramework.Toolkit.Extensions.DbContextExtensions.GetPrimaryKeyForEntity``1(System.Data.Entity.DbContext,``0)" -->
+        <member name="M:EntityFramework.Toolkit.Extensions.DbContextExtensions.AutoConfigure(System.Data.Entity.DbContext,System.Data.Entity.DbModelBuilder,System.Reflection.Assembly)">
+            <summary>
+            Scans the assembly in which the given <paramref name="context"/> lives for all
+            implementations of <see cref="T:System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1"/> and 
+            configures them using the given <paramref name="modelBuilder"/>.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="modelBuilder">The model builder used to configure the EntityTypeConfigurations.</param>
+            <param name="targetAssembly">The assembly which contains the EntityTypeConfigurations.</param>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.MappingExtensions.IsUnique(System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration,System.String,System.Int32)">
+            <summary>
+            Note: If the unique property is of type string then you have to set the MaxLength.
+            </summary>
+            <param name="property">The property instance.</param>
+            <param name="indexName">The name of the database index. Default is "IX_{some GUID}" if not defined.</param>
+            <param name="columnOrder">The column order of the index. Default is 0 if not defined.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Extensions.QueryableExtensions.Include``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])">
+            <summary>
+            Includes navigation properties.
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="queryable">Queryable</param>
+            <param name="properties">A list of properties to include.</param>
+            <returns>New queryable which includes the given navigation properties.</returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.#ctor(EntityFramework.Toolkit.IDbContext)">
+            <summary>
+                Initializes a new instance of the <see cref="T:EntityFramework.Toolkit.GenericRepository`1" /> class.
+            </summary>
+        </member>
+        <member name="P:EntityFramework.Toolkit.GenericRepository`1.Context">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.GetAll">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.FindById(System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.LoadReferenced``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.GenericRepository`1.Save">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.Testing.ConnectionStringGenerator.RandomizeDatabaseName(System.String)">
+            <summary>
+            Adds a random number to the given <param name="connectionString">connectionString</param> parameter.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Testing.ContextTestBase`1.#ctor(EntityFramework.Toolkit.Core.IDbConnection,System.Boolean,System.Data.Entity.IDatabaseInitializer{`0},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntityFramework.Toolkit.Testing.ContextTestBase`1"/> class.
+            </summary>
+            <param name="dbConnection">The <see cref="T:EntityFramework.Toolkit.Core.IDbConnection"/> which is used to connect to the database.</param>
+            <param name="initializeDatabase">Determines if the database needs to be initialized at construction time.  (Default is true).</param>
+            <param name="databaseInitializer">The <see cref="T:System.Data.Entity.IDatabaseInitializer`1"/> which is used initialize the database. (Default is <see cref="T:System.Data.Entity.DropCreateDatabaseAlways`1"/>).</param>
+            <param name="deleteDatabaseOnDispose">Determines if the database needs to be deleted on dispose. (Default is true).</param>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Testing.ContextTestBase`1.EnsureDatabaseInitializer(System.Data.Entity.IDatabaseInitializer{`0})">
+            <summary>
+            Returns the default database initializer (given by ctor) if <paramref name="databaseInitializer"/> is null.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Testing.ContextTestBase`1.EnsureDbConnection(EntityFramework.Toolkit.Core.IDbConnection)">
+            <summary>
+            Returns the default db connection (given by ctor) if <paramref name="dbConnection"/> is null.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.UnitOfWork.Commit">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.UnitOfWork.CommitAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:EntityFramework.Toolkit.UnitOfWork.Dispose">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,149 @@
+.body {
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    text-decoration: rgb(255,255,255);
+    /*font-weight: bold;*/
+}
+
+#menu {
+    /*background-color: rgba(192,192,192,0.5);*/
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    /*
+    margin-right: 100px;
+    margin-left: 100px;
+    */
+      }
+
+#firma {
+	font-family: 'Comfortaa', cursive;
+	font-style: italic;
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+/*h2*/
+#ppal {
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+/*P*/
+#P {
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	padding-bottom: 50px;
+	/*
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+	*/
+}
+
+/*.columna {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+
+	-webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}*/
+
+#redes {
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+}
+
+#navbar {
+	font-family: 'Comfortaa', cursive;
+	font-size: 14px;
+	font-weight: bold;
+	/*fixted-top*/
+}
+
+/*.carousel-iner {
+	width: 60px;
+	height: 30px;
+	margin: auto;
+}*/
+
+#footer {
+	/*background-color: rgb(0,0,0);
+	text-decoration-color: rgb(255,255,255);*/
+	font-family: 'Comfortaa', cursive;
+	margin: auto;
+	font-size: 12px;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+#sociales {
+	font-size: 30px;
+	text-align: center;
+	/*border-image: 0px;*/
+}
+
+#pago {
+	font-size: 30px;
+	text-align: center;
+	/*border-image: 0px;*/
+}
+
+/*<div> --> margin 0 auto no text align*/
+
+#buscar {
+    border-radius: 8px;
+    font-size: 14px;
+    /*padding-top: 25px;*/
+}
+
+/*#miCarrito {
+	text-align: center;
+	background-color: rgb(255,255,255);
+	border-color: rgb(214,219,223);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 6px 4px 4px 4px;
+
+}*/
+
+#contacto {
+	margin-bottom: 15px;
+    /*text-align: justify;
+    letter-spacing: 2px;*/
+}
+
+/*.img {
+	border-radius: 20px;
+}*/
+
+/*.input-group {
+	align-items: right;
+	text-align: right;
+	align-content: right;
+}*/
+
+#logo {
+	/*padding-bottom: 15px;*/
+	width: 500px;
+	height: 200px;
+	margin-bottom: 15px;
+}
+
+
+

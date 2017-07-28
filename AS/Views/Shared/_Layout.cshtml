@@ -1,0 +1,217 @@
+﻿@using Alpaca_Smith.Models
+@{ 
+    Usuarios usuario = (Usuarios)Session["UsuarioLogueado"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Alpaca Smith</title>
+
+    <link rel="shortcut icon" type="image/x-icon" img src="~/Content/images/logo as.png" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="~/Content/general.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row-fluid">
+            <form id="buscar" class="col-md-3">
+                <input type="text" class="form-control" name="search" placeholder="Buscar...">
+            </form>
+            <div class="col-md-7">
+                <img id="logo" src="~/Content/images/logo as.png" />
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Content/images/logo as.png" /></ a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href=@Url.Action("Index", "Home")>INICIO</a></li>
+                    <li><a href=@Url.Action("QuienesSomos", "Home")>QUIENES SOMOS</a></li>
+                    <li><a href=@Url.Action("LineaPlata925", "Home")>LINEA PLATA 925</a></li>
+                    <li><a href=@Url.Action("LineaAlpaca", "Home")>LINEA ALPACA</a></li>
+                    <li><a href=@Url.Action("LineaBijou", "Home")>LINEA BIJOU</a></li>
+                    <li><a href=@Url.Action("CualEsMiTalle", "Home")>CUAL ES MI TALLE?</a></li>
+                    <li><a href=@Url.Action("Contacto", "Home")>CONTACTO</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    @if (usuario == null)
+                    {
+                        <li id="iniciar"><a href="#" data-toggle="modal" data-target="#modalInicioSesion">Iniciar sesión</a></li>
+                    }
+                    else
+                    {
+                        <li class="dropdown menuUsuario hide">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="nombreUsuario">@(usuario.Nombre)</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mi perfil</a></li>
+                                <li><a href="#">Mi carrito</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a id="salir" href="@Url.Action("Logout", "Usuarios")">Salir</a></li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+    <br>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-6 col-md-3">
+                        <p>NAVEGACION</p>
+                        <hr />
+                        <a href=@Url.Action("Index", "Home")>Inicio</a>
+                        <br />
+                        <a href=@Url.Action("QuienesSomos", "Home")>Quienes somos</a>
+                        <br />
+                        <a href=@Url.Action("LineaPlata925", "Home")>Línea Plata 925</a>
+                        <br />
+                        <a href=@Url.Action("LineaAlpaca", "Home")>Línea Alpaca</a>
+                        <br />
+                        <a href=@Url.Action("LineaBijou", "Home")>Linea Bijou</a>
+                        <br />
+                        <a href=@Url.Action("CualEsMiTalle", "Home")>Cuál es mi talle?</a>
+                        <br />
+                        <a href=@Url.Action("Contacto", "Home")>Contacto</a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                        <p>REDES SOCIALES</p>
+                        <hr />
+                        <div id="sociales">
+                            <a href="https://www.facebook.com/alpacasmithok/" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/alpacasmith/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="http://www.twitter.com/AlpacaSmithOk" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://es.pinterest.com/alpacasmith/" target="_blank">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </div>
+                    <br>
+                        <p>NEWSLETTER</p>
+                        <hr />
+                    <div class="form group col-xs-4 col-md-10 col-md-offset-1">
+                        <label for="" class="email">E-mail:</label>
+                        <br>
+                        <input type="email" placeholder="Ingresa tu e-mail" class="form-control">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="form group">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                        <p>FORMAS DE PAGO</p>
+                        <hr />
+                        <div id="pago">
+                            <img src="~/Content/images/Medios de pago/visa@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/mastercard@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/amex@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/diners@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/banelco@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/cabal@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/pagofacil@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/rapipago@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/tarjeta-naranja@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/tarjeta-shopping@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Medios de pago/mercadopago@2x.png" style="width: 40px; height: 20px" />
+                        </div>
+                    <br>
+                        <p>FORMAS DE ENVIO</p>
+                        <hr />
+                        <div id="envio">
+                            <img src="~/Content/images/Formas de envio/correo-argentino@2x.png" style="width: 40px; height: 20px" />
+                            <img src="~/Content/images/Formas de envio/oca@2x.png" style="width: 40px; height: 20px" />
+                        </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                        <p>CONTACTANOS</p>
+                        <hr />
+                        <spam class="fa fa-envelope"></spam>
+                        <a href="mailto:hola@alpacasmith.com.ar">hola@alpacasmith.com.ar</a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+    <br />
+
+    <hr>
+
+    <br />
+
+    <div class="container">
+        <div id="firma">
+            <footer>Natalia Rocha Wilson - ComIT 2017 <i class="fa fa-registered"></i></footer>
+        </div>
+    </div>
+
+    <!-- Modal de Inicio de Sesion-->
+    <div class="modal fade" id="modalInicioSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="form-singin" method="post" action="@Url.Action("Login","Usuario")">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Ingresar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="loginEmail" type="email" class="form-control" name="email" placeholder="Email" required="" autofocus="">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="loginContraseña" type="password" class="form-control" name="password" placeholder="Password" required="">
+                        </div>
+                        <br>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+                    <button id="ingresar" type="submit" class="btn btn-primary" value="Ingresar">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/general.js"></script>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFramework.Toolkit.Core</name>
+    </assembly>
+    <members>
+        <member name="M:EntityFramework.Toolkit.Change.#ctor(System.Object,EntityFramework.Toolkit.Core.ChangeState,System.Collections.Generic.IEnumerable{EntityFramework.Toolkit.PropertyChangeInfo})">
+            <summary>
+                Initializes a new instance of the <see cref="T:EntityFramework.Toolkit.Change" /> class.
+            </summary>
+            <param name="changedEntity">
+                The changed object.
+            </param>
+            <param name="changedProperties">
+                The List of the properties that have been changed.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if the specified <paramref name="changedEntity" /> is null.
+            </exception>
+            .
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if the specified <paramref name="changedProperties" /> is null.
+            </exception>
+        </member>
+        <member name="T:EntityFramework.Toolkit.Core.IContext">
+            <summary>
+            <see cref="T:EntityFramework.Toolkit.Core.IContext"/> is the abstraction of a data context.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IContext.ResetDatabase">
+            <summary>
+            Drops and recreates the underlying database.
+            USE WITH CARE!
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IContext.SaveChanges">
+            <summary>
+            Saves all changes made in this context to the underlying database.
+            </summary>
+            <returns>The number of objects written to the underlying database.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown if the context has been disposed.</exception>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IDataSeed.GetAddOrUpdateExpression">
+            <summary>
+            Gets the expression which checks if there are existing seed entries.
+            Depending on the result, the seed entry is added or updated.
+            </summary>
+        </member>
+        <member name="P:EntityFramework.Toolkit.Core.IDataSeed.EntityType">
+            <summary>
+            The type of the entity for which this seed is used.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IDataSeed.GetAllObjects">
+            <summary>
+            The seed data as a list of objects.
+            </summary>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IGenericRepository`1.FindById(System.Object[])">
+            <summary>
+            Finds an entity with the given primary key values.
+            If an entity with the given primary key values exists in the context, then it is
+            returned immediately without making a request to the store.  Otherwise, a request
+            is made to the store for an entity with the given primary key values and this entity,
+            if found, is attached to the context and returned.  If no entity is found in the
+            context or the store, then null is returned.
+            </summary>
+            <param name="ids"> The values of the primary key for the entity to be found. </param>
+            <returns> The entity found, or null. </returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IGenericRepository`1.AddOrUpdate(`0)">
+            <summary>
+            Adds or updates the given entity. If the entity is existing, it's going to be updated with the new values.
+            If the entity does not exist in the context, it's going to be created.
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IGenericRepository`1.Update(`0)">
+            <summary>
+            Updates the given entity. This method checks if an entity exists before it tries to perform the update activity.
+            </summary>
+            <param name="entity">The entity to be updated in the database context.</param>
+            <exception cref="!:EntityNotFoundException">Thrown if the update entity does not exist.</exception>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IGenericRepository`1.Save">
+            <summary>
+            Saves the changes made in this repository.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EntityFramework.Toolkit.Core.IUnitOfWork.Commit">
+            <summary>
+            Saves pending changes to all registered contexts.
+            </summary>
+            <returns>The total number of objects committed.</returns>
+        </member>
+        <member name="T:EntityFramework.Toolkit.IChange">
+            <summary>
+                Interface for changed objects and object properties.
+            </summary>
+        </member>
+        <member name="P:EntityFramework.Toolkit.IChange.ChangedEntity">
+            <summary>
+                Gets the changed object.
+            </summary>
+            <value>
+                See <see cref="T:System.Object" />.
+            </value>
+        </member>
+        <member name="P:EntityFramework.Toolkit.IChange.ChangedProperties">
+            <summary>
+                Gets the names of the properties that have been changed.
+            </summary>
+            <value>
+                The names of the properties that have been changed.
+            </value>
+        </member>
+        <member name="P:EntityFramework.Toolkit.IChange.State">
+            <summary>
+                Gets the state of the changed object.
+            </summary>
+            <value>
+                See <see cref="!:EntityState" />.
+            </value>
+        </member>
+    </members>
+</doc>

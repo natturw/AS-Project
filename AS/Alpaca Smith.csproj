@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63AAA501-5547-4C10-8F82-CB531DFDE645}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alpaca_Smith</RootNamespace>
+    <AssemblyName>Alpaca Smith</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Toolkit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Toolkit.1.0.3\lib\net45\EntityFramework.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Toolkit.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Toolkit.Core.1.0.3\lib\net45\EntityFramework.Toolkit.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.4.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.4.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.4.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.4.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.4.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.4.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.0\lib\net45\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707261453510_Inicial.cs" />
+    <Compile Include="Migrations\201707261453510_Inicial.Designer.cs">
+      <DependentUpon>201707261453510_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Alpaca.cs" />
+    <Compile Include="Models\Alpaca_SmithContext.cs" />
+    <Compile Include="Models\Bienvenida.cs" />
+    <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\Usuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\general.css" />
+    <Content Include="Content\images\AS %281%29.jpg" />
+    <Content Include="Content\images\AS %282%29.jpg" />
+    <Content Include="Content\images\AS %283%29.jpg" />
+    <Content Include="Content\images\AS %284%29.jpg" />
+    <Content Include="Content\images\Formas de envio\correo-argentino%402x.png" />
+    <Content Include="Content\images\Formas de envio\oca%402x.png" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amazonas Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amazonas Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amazonas Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amazonas Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amour Amour Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amour Amour Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amour Amour Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Amour Amour Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo AS Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo AS Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo AS Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo AS Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Campo Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Campo Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Campo Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Carpe Diem Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Carpe Diem Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Carpe Diem Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Carpe Diem Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cebra Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cebra Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cebra Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cebra Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Checker Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Checker Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Checker Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Chenu Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Chenu Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Chenu Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Chenu Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Continental Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Continental Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Continental Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Crat Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Crat Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Crat Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Crat Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cuadrado Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cuadrado Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Cuadrado Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Deux Gloses Alpaca %286%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Full moon Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Full moon Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Full moon Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %286%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %287%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %288%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Infinity Alpaca %289%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Ingles Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Ingles Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Ingles Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Ingles Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Ingles Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %286%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %287%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %288%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Love Alpaca %289%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Martele Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Martele Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Martele Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Martele Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Martele Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %286%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Nail Alpaca %287%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %286%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Natu Alpaca %287%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Reff knot Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Reff knot Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Reff knot Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Reff knot Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Rosa Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Rosa Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Rosa Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Shing Shang Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Shing Shang Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Shing Shang Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Shing Shang Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Stacie Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Stacie Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Stacie Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Tourbillion Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Tourbillion Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Tourbillion Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Tourbillion Alpaca %284%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Tourbillion Alpaca %285%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Triangulo Alpaca %281%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Triangulo Alpaca %282%29.jpg" />
+    <Content Include="Content\images\Linea Alpaca\Anillo Triangulo Alpaca %283%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Choker Amelie.jpg" />
+    <Content Include="Content\images\Linea Bijou\Choker Faith 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Choker Faith 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Choker Spirit 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Choker Spirit 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Chiara 1.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Chiara 2.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Chiara 3.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Chloe 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Chloe 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Elephant 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Elephant 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Elephant 3.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Frida 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Frida 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gaia 1.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gaia 2.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gaia 3.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gaia 4.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Genesis 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Genesis 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Grace 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Grace 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta amethyst 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta amethyst 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta aventurine 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta aventurine 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta cuarzo 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Greta cuarzo 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy blue 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy blue 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy green 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy green 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy orange 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy orange 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy purple 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy purple 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy red 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy red 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy white 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Gypsy white 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Iris 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Iris 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Juana 1.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Juana 2.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Kawit 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Kawit 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Luana 1.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Luana 2.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Collar Muna 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Muna 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Peace 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Peace 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Collar Tania 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pechera Zoe 1.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Pechera Zoe 4.jpeg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Carmin 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Carmin 3.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia amarilla 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia amarilla 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia azul 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia azul 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia coral 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia coral 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia fucsia 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia fucsia 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia rosa 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia rosa 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Ethiopia verde 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima blue %281%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima blue %282%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima blue %283%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima green 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima pink %281%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima pink %282%29.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Fatima purple 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Frida 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Frida 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gina 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gina 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy aurore 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy aurore 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy green 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy green 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy purple 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy purple 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera gypsy rose 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Gypsy rose 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Indie 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Indie 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Mila 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Mila 2.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Umma 1.jpg" />
+    <Content Include="Content\images\Linea Bijou\Pulsera Umma 2.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Ciara Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Ciara Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Eolo Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Eolo Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Eolo Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Kaia Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Kaia Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Kaia Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Leto Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Leto Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Malu Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Malu Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Malu Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Margot Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Margot Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Margot Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Margot Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Margot Plata925 %285%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Musa Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Musa Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Musa Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %285%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Nut Plata925 %286%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Round Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Round Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Square Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Square Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Square Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Yuki Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Yuki Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Anillo Yuki Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia naranja Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia naranja Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia naranja Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia naranja Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia rosa Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia rosa Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia rosa Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia violeta Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia violeta Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia violeta Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Alaia violeta Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo amatista Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo amatista Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo amatista Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo azul Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo azul Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Amparo azul Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Aria Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Aria Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Aria Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala agua Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala agua Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala aire Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala aire Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala aire Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala fuego Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala fuego Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala fuego Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala fuego Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala night Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala night Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala tierra Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala tierra Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala tierra Plata925 %283%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Gala tierra Plata925 %284%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Lola Plata925 %281%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Lola Plata925 %282%29.jpg" />
+    <Content Include="Content\images\Linea Plata925\Pulsera Lola Plata925 %283%29.jpg" />
+    <Content Include="Content\images\logo as.png" />
+    <Content Include="Content\images\medidas.jpg" />
+    <Content Include="Content\images\Medios de pago\amex%402x.png" />
+    <Content Include="Content\images\Medios de pago\banelco%402x.png" />
+    <Content Include="Content\images\Medios de pago\cabal%402x.png" />
+    <Content Include="Content\images\Medios de pago\diners%402x.png" />
+    <Content Include="Content\images\Medios de pago\mastercard%402x.png" />
+    <Content Include="Content\images\Medios de pago\mercadopago%402x.png" />
+    <Content Include="Content\images\Medios de pago\pagofacil%402x.png" />
+    <Content Include="Content\images\Medios de pago\rapipago%402x.png" />
+    <Content Include="Content\images\Medios de pago\tarjeta-naranja%402x.png" />
+    <Content Include="Content\images\Medios de pago\tarjeta-shopping%402x.png" />
+    <Content Include="Content\images\Medios de pago\visa%402x.png" />
+    <Content Include="Content\images\Redes\facebook.png" />
+    <Content Include="Content\images\Redes\instagram.png" />
+    <Content Include="Content\images\Redes\pinterest.png" />
+    <Content Include="Content\images\Redes\twitter.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceer40EN.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlcecompact40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceca40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceqp40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceme40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceer40EN.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlcecompact40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceca40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\general.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Contacto.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\QuienesSomos.cshtml" />
+    <Content Include="Views\Home\LineaPlata925.cshtml" />
+    <Content Include="Views\Home\LineaAlpaca.cshtml" />
+    <Content Include="Views\Home\LineaBijou.cshtml" />
+    <Content Include="Views\Home\CualEsMiTalle.cshtml" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Test\" />
+    <Folder Include="Views\Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707261453510_Inicial.resx">
+      <DependentUpon>201707261453510_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51557</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51557/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Users\natal\Desktop\Proyecto\AS\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

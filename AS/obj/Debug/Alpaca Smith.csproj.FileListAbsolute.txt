@@ -1,0 +1,380 @@
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\ApplicationInsights.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csc.exe
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csc.exe.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csc.rsp
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csi.exe
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csi.rsp
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.AppContext.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Collections.Immutable.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.IO.FileSystem.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\vbc.exe
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\vbc.exe.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\vbc.rsp
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\VBCSCompiler.exe
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\VBCSCompiler.exe.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Alpaca Smith.dll.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Alpaca Smith.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Alpaca Smith.pdb
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Antlr3.Runtime.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.DependencyCollector.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.Web.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.WindowsServer.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.ApplicationInsights.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.Web.Infrastructure.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Newtonsoft.Json.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Helpers.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Mvc.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Optimization.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Razor.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.Deployment.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.Razor.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\WebGrease.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Helpers.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Mvc.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Optimization.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.Razor.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.Deployment.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Web.WebPages.Razor.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Antlr3.Runtime.pdb
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Newtonsoft.Json.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.ApplicationInsights.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.DependencyCollector.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.WindowsServer.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AI.Web.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\obj\Debug\Alpaca Smith.csprojResolveAssemblyReference.cache
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\obj\Debug\Alpaca Smith.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\obj\Debug\Alpaca Smith.pdb
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\csi.exe.config
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Console.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Diagnostics.Process.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.IO.Compression.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.IO.Pipes.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.AccessControl.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Claims.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Threading.Thread.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.ValueTuple.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Xml.XPath.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlcese40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlceqp40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlceme40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlceer40EN.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlcecompact40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\sqlceca40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlcese40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlceqp40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlceme40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlceer40EN.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlcecompact40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\sqlceca40.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.SqlServer.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.SqlServerCompact.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.Core.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\System.Data.SqlServerCe.dll
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.SqlServer.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.SqlServerCompact.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.pdb
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.Core.pdb
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\bin\EntityFramework.Toolkit.Core.xml
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\obj\Debug\Alpaca_Smith.Migrations.Inicial.resources
+C:\Repositorios GIT\Alpaca Smith\Alpaca Smith\obj\Debug\Alpaca Smith.csproj.GenerateResource.Cache
+C:\Repositorios GIT\AlpacaSmith-Project2\obj\Debug\Alpaca Smith.dll
+C:\Repositorios GIT\AlpacaSmith-Project2\obj\Debug\Alpaca Smith.pdb
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\ApplicationInsights.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csc.exe
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csc.exe.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csc.rsp
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csi.exe
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csi.exe.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\csi.rsp
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.AppContext.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Console.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.IO.Compression.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Claims.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.ValueTuple.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\vbc.exe
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\vbc.exe.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\vbc.rsp
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\VBCSCompiler.exe
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Alpaca Smith.dll.config
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Alpaca Smith.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Alpaca Smith.pdb
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlcese40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlceqp40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlceme40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlceer40EN.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlcecompact40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\sqlceca40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlcese40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlceqp40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlceme40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlceer40EN.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlcecompact40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\sqlceca40.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Antlr3.Runtime.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.SqlServer.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.Core.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.Web.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Newtonsoft.Json.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Data.SqlServerCe.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Helpers.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Mvc.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Optimization.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Razor.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.Razor.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\WebGrease.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Antlr3.Runtime.pdb
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.SqlServer.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.pdb
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.Core.pdb
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\EntityFramework.Toolkit.Core.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.Web.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\Newtonsoft.Json.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Helpers.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Mvc.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Optimization.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.Razor.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\bin\System.Web.WebPages.Razor.xml
+C:\Users\natal\Desktop\PROJECT\AS\AS\obj\Debug\Alpaca Smith.csprojResolveAssemblyReference.cache
+C:\Users\natal\Desktop\PROJECT\AS\AS\obj\Debug\Alpaca_Smith.Migrations.Inicial.resources
+C:\Users\natal\Desktop\PROJECT\AS\AS\obj\Debug\Alpaca Smith.csproj.GenerateResource.Cache
+C:\Users\natal\Desktop\PROJECT\AS\AS\obj\Debug\Alpaca Smith.dll
+C:\Users\natal\Desktop\PROJECT\AS\AS\obj\Debug\Alpaca Smith.pdb
+C:\Repositorios GIT\AS\AS\bin\ApplicationInsights.config
+C:\Repositorios GIT\AS\AS\bin\roslyn\csc.exe
+C:\Repositorios GIT\AS\AS\bin\roslyn\csc.exe.config
+C:\Repositorios GIT\AS\AS\bin\roslyn\csc.rsp
+C:\Repositorios GIT\AS\AS\bin\roslyn\csi.exe
+C:\Repositorios GIT\AS\AS\bin\roslyn\csi.exe.config
+C:\Repositorios GIT\AS\AS\bin\roslyn\csi.rsp
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repositorios GIT\AS\AS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.AppContext.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Collections.Immutable.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Console.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.IO.Compression.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.IO.FileSystem.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.IO.Pipes.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.AccessControl.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Claims.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Threading.Thread.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.ValueTuple.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Xml.XPath.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Repositorios GIT\AS\AS\bin\roslyn\vbc.exe
+C:\Repositorios GIT\AS\AS\bin\roslyn\vbc.exe.config
+C:\Repositorios GIT\AS\AS\bin\roslyn\vbc.rsp
+C:\Repositorios GIT\AS\AS\bin\roslyn\VBCSCompiler.exe
+C:\Repositorios GIT\AS\AS\bin\roslyn\VBCSCompiler.exe.config
+C:\Repositorios GIT\AS\AS\bin\Alpaca Smith.dll.config
+C:\Repositorios GIT\AS\AS\bin\Alpaca Smith.dll
+C:\Repositorios GIT\AS\AS\bin\Alpaca Smith.pdb
+C:\Repositorios GIT\AS\AS\bin\x86\sqlcese40.dll
+C:\Repositorios GIT\AS\AS\bin\x86\sqlceqp40.dll
+C:\Repositorios GIT\AS\AS\bin\x86\sqlceme40.dll
+C:\Repositorios GIT\AS\AS\bin\x86\sqlceer40EN.dll
+C:\Repositorios GIT\AS\AS\bin\x86\sqlcecompact40.dll
+C:\Repositorios GIT\AS\AS\bin\x86\sqlceca40.dll
+C:\Repositorios GIT\AS\AS\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Repositorios GIT\AS\AS\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlcese40.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlceqp40.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlceme40.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlceer40EN.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlcecompact40.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\sqlceca40.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Repositorios GIT\AS\AS\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Repositorios GIT\AS\AS\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Repositorios GIT\AS\AS\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Repositorios GIT\AS\AS\bin\Antlr3.Runtime.dll
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.dll
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.SqlServer.dll
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.SqlServerCompact.dll
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.Core.dll
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.Web.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.WindowsServer.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.ApplicationInsights.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repositorios GIT\AS\AS\bin\Microsoft.Web.Infrastructure.dll
+C:\Repositorios GIT\AS\AS\bin\Newtonsoft.Json.dll
+C:\Repositorios GIT\AS\AS\bin\System.Data.SqlServerCe.dll
+C:\Repositorios GIT\AS\AS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.Helpers.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.Mvc.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.Optimization.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.Razor.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.Deployment.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.dll
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.Razor.dll
+C:\Repositorios GIT\AS\AS\bin\WebGrease.dll
+C:\Repositorios GIT\AS\AS\bin\Antlr3.Runtime.pdb
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.xml
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.SqlServer.xml
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.SqlServerCompact.xml
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.pdb
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.xml
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.Core.pdb
+C:\Repositorios GIT\AS\AS\bin\EntityFramework.Toolkit.Core.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.Web.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AI.WindowsServer.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.ApplicationInsights.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Repositorios GIT\AS\AS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repositorios GIT\AS\AS\bin\Newtonsoft.Json.xml
+C:\Repositorios GIT\AS\AS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.Helpers.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.Mvc.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.Optimization.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.Razor.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.Deployment.xml
+C:\Repositorios GIT\AS\AS\bin\System.Web.WebPages.Razor.xml
+C:\Repositorios GIT\AS\AS\obj\Debug\Alpaca Smith.csprojResolveAssemblyReference.cache
+C:\Repositorios GIT\AS\AS\obj\Debug\Alpaca_Smith.Migrations.Inicial.resources
+C:\Repositorios GIT\AS\AS\obj\Debug\Alpaca Smith.csproj.GenerateResource.Cache
+C:\Repositorios GIT\AS\AS\obj\Debug\Alpaca Smith.dll
+C:\Repositorios GIT\AS\AS\obj\Debug\Alpaca Smith.pdb
